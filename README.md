@@ -15,8 +15,8 @@ Projeto ainda em andamento. A ser completado individualmente.
 
 ## Recursos utilizados
 
-**Front-end:** Bootstrap, SASS, VueJS
-**Back-end:** Node.js, Express, TypeScript, MySQL, Sequelize, Bcrypt
+**Front-end:** Bootstrap, SASS, VueJS. <br />
+**Back-end:** Node.js, Express, TypeScript, MySQL, Sequelize, Bcrypt.
 
 ## Gerenciamento do Projeto
 
@@ -25,30 +25,26 @@ Projeto ainda em andamento. A ser completado individualmente.
 
 ## Para executar o projeto
 
-Clone o projeto
+1- Clonar o projeto:
 
 ```
-git clone https://github.com/edcabralc/chloe-backend.git
+git clone https://github.com/rodhis/hotel-complete-systems.git
 ```
 
-Acesse o diretorio do projeto
+2- Acessar o diretorio do projeto:
 
 ```
-cd chloe-backend
+cd hotel-complete
 ```
 
-Instale as depedências
+3- Instalar as depedências:
 
 ```
 npm install ou npm i
 ```
 
-Rodando localmente
+4- Para rodar localmente:
 
 ```
 npm run serve
 ```
-
-### Customize configuration
-
-# See [Configuration Reference](https://cli.vuejs.org/config/).
