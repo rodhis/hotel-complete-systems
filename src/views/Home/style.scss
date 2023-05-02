@@ -1,0 +1,132 @@
+@use "@/assets/scss/index" as *;
+
+.home {
+    &-hero {
+        background-image: url("@/assets/images/background-home.png");
+    }
+    &-acomodacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 58px;
+        padding: 68px 0;
+        margin: 0 32px;
+        @include responsive(desktop) {
+            font-size: 86rem;
+        }
+    }
+    &-acomodacoes-images {
+        display: flex;
+        max-width: 1090px;
+        gap: 32px;
+        img {
+            flex: 0 1 300px;
+            border-radius: 6px;
+            width: min(300px, 30%);
+        }
+    }
+    &-reserva {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eff5f0;
+        &-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 68px;
+            max-width: 1090px;
+            width: 100%;
+        }
+        &-content {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            gap: 52px;
+            h2 {
+                font-size: 64px;
+                font-weight: 700;
+                color: #050505;
+                line-height: 72px;
+                max-width: 10ch;
+            }
+        }
+        & img {
+            border-radius: 16px;
+        }
+    }
+}
+
+/* media queries */
+@media (max-width: 960px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+
+    .home-reserva-container {
+        gap: 58px;
+        flex-direction: column-reverse;
+    }
+
+    .home-reserva-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .section {
+        padding: 22px 0;
+    }
+    .home-acomodacoes {
+        padding: 22px 0;
+    }
+
+    .home-reserva-container {
+        padding: 42px 32px;
+    }
+
+    .home-reserva-content h2 {
+        font-size: 48px;
+        font-weight: 700;
+        color: rgb(5, 5, 5);
+        line-height: 52px;
+        max-width: 10ch;
+    }
+
+    .footer {
+        padding: 22px 0px;
+    }
+    .footer-container {
+        gap: 42px;
+        padding: 42px 0px;
+        flex-direction: column;
+    }
+
+    .footer-item_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-item {
+        width: 100%;
+        gap: 22px;
+    }
+
+    .footer-item > ul,
+    .footer-menu {
+        gap: 12px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}

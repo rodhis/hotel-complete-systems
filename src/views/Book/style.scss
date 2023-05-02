@@ -1,0 +1,180 @@
+/* SEÇÃO TIPO DE ACOMODAÇÃO */
+.book-hero {
+    background: url(@/assets/images/background-home.png) no-repeat;
+}
+
+.secao-tipo-acomodacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.secao-tipo-acomodacao input {
+    accent-color: #558e60;
+}
+
+.secao-tipo-acomodacao .preco {
+    font-weight: bold;
+    color: black;
+}
+
+.secao-tipo-acomodacao p {
+    margin: 1rem 0;
+    color: #686b68;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container-resumo-reserva {
+    border: 1px solid #016956;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #eff5f0;
+    height: auto;
+    margin: 40px 0 50px 0;
+}
+
+.container-resumo-reserva {
+    flex: 1;
+}
+
+.container-resumo-reserva .btn {
+    width: 288px;
+    height: auto;
+    border-radius: 9px;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    padding: 12px 22px;
+    color: #fff;
+    background-color: #558e60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.container-resumo-reserva .btn:hover {
+    background-color: #558e60;
+    color: #fff;
+    opacity: 0.5;
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+
+.container-resumo-reserva .container-listas {
+    font-weight: bold;
+}
+
+.container-listas > ul:nth-of-type(2) li {
+    margin: 8px 0;
+}
+
+.container-listas .gerarDesconto {
+    border-radius: 8px;
+    background-color: #848e55;
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+    margin-right: 10px;
+    border: 0px;
+    width: 150px;
+}
+
+.container-listas .gerarDesconto:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: ease 0.2s;
+}
+
+.container-listas .desconto {
+    border: solid 1px #bdcfbd;
+    padding: 8px;
+    border-radius: 6px;
+    width: 50%;
+}
+
+.container-listas li {
+    margin: 10px 0;
+}
+
+.container-listas .preco-total {
+    text-align: right;
+}
+
+.container-listas .add-servicos {
+    border-top: 1px solid #eae6d9;
+    border-bottom: 1px solid #eae6d9;
+    padding-top: 1rem;
+    padding-bottom: 10px;
+}
+
+.right-reserva {
+    width: 100%;
+}
+
+.card-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-inputs p {
+    margin: 1rem 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.input-group label {
+    color: #686b68;
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) and (orientation: portrait) {
+    .item-label {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 915px) {
+    .container-titulos-acomodacao img {
+        width: 100%;
+    }
+    .secao-tipo-acomodacao {
+        flex-direction: column;
+    }
+    .item-label {
+        flex-direction: column;
+    }
+    .container-resumo-reserva {
+        width: 100%;
+    }
+    .input-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .secao-tipo-acomodacao {
+        display: block;
+    }
+
+    .container-titulos-acomodacao img {
+        width: 100%;
+    }
+    .input-group {
+        width: 100%;
+    }
+}

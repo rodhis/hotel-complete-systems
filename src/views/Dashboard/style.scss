@@ -1,0 +1,106 @@
+@use '@/assets/scss/index' as *;
+
+section {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.aside-header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+    background-color: white;
+}
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    color: $primary-green;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: $titles-gray;
+}
+
+.profile-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: $primary-gold;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid 5px white;
+}
+
+.logout li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside-menu {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.menu-dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-dashboard li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.menu-dashboard li:hover a {
+    width: 100%;
+    color: white;
+}
+
+.menu-dashboard li:hover {
+    background-color: $primary-green;
+    color: #f7f7f7;
+}
+
+.container-dashboard {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+}
+
+.content {
+    padding: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
